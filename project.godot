@@ -11,9 +11,9 @@ config_version=5
 [application]
 
 config/name="BigEatSmall"
-run/main_scene="res://level.tscn"
+run/main_scene="res://Scenes/level.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://icon.png"
+config/icon="res://Assets/icon.png"
 
 [display]
 

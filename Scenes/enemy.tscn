@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://cbql1cbw06ntf"]
+[gd_scene load_steps=5 format=3 uid="uid://q6ggvq6vk7dd"]
 
-[ext_resource type="Script" path="res://player.gd" id="1_58s3p"]
+[ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_qbuo3"]
 
 [sub_resource type="Gradient" id="Gradient_aiqya"]
 offsets = PackedFloat32Array(0.993506, 1)
@@ -17,10 +17,11 @@ fill_to = Vector2(1, 0.5)
 [sub_resource type="CircleShape2D" id="CircleShape2D_cqfbr"]
 radius = 25.0
 
-[node name="Player" type="Area2D"]
+[node name="Enemy" type="Area2D"]
 position = Vector2(500, 500)
-collision_mask = 2
-script = ExtResource("1_58s3p")
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_qbuo3")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.5, 0.5)
@@ -29,4 +30,6 @@ texture = SubResource("GradientTexture2D_4fgy5")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_cqfbr")
 
-[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

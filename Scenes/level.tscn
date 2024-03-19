@@ -1,11 +1,11 @@
 [gd_scene load_steps=8 format=3 uid="uid://cbgillxkopk6m"]
 
-[ext_resource type="Script" path="res://level.gd" id="1_qyms7"]
-[ext_resource type="PackedScene" uid="uid://q6ggvq6vk7dd" path="res://enemy.tscn" id="2_8sq0a"]
-[ext_resource type="PackedScene" uid="uid://cbql1cbw06ntf" path="res://player.tscn" id="3_jbm6p"]
-[ext_resource type="Script" path="res://main_menu.gd" id="4_ba7bo"]
-[ext_resource type="PackedScene" uid="uid://qe0lhydj46dq" path="res://score.tscn" id="5_gb3ah"]
-[ext_resource type="AudioStream" uid="uid://uidoajxy50yl" path="res://BigEatSmall.mp3" id="6_ss51n"]
+[ext_resource type="Script" path="res://Scripts/level.gd" id="1_qyms7"]
+[ext_resource type="PackedScene" uid="uid://q6ggvq6vk7dd" path="res://Scenes/enemy.tscn" id="2_8sq0a"]
+[ext_resource type="PackedScene" uid="uid://cbql1cbw06ntf" path="res://Scenes/player.tscn" id="3_jbm6p"]
+[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="4_ba7bo"]
+[ext_resource type="PackedScene" uid="uid://qe0lhydj46dq" path="res://Scenes/score.tscn" id="5_gb3ah"]
+[ext_resource type="AudioStream" uid="uid://uidoajxy50yl" path="res://Assets/BigEatSmall.mp3" id="6_ss51n"]
 
 [sub_resource type="Curve2D" id="Curve2D_3jw3d"]
 _data = {
